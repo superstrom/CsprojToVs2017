@@ -29,7 +29,7 @@ namespace Project2015To2017Tests
 
             Assert.AreEqual(6, includeItems.Count(x => x.Name == XmlNamespace + "Compile"));
             Assert.AreEqual(6, includeItems.Count(x => x.Name == XmlNamespace + "Compile" && x.Attribute("Update") != null));
-            Assert.AreEqual(1, includeItems.Count(x => x.Name == XmlNamespace + "EmbeddedResource")); // #73 inlcude things that are not ending in .resx
+            Assert.AreEqual(1, includeItems.Count(x => x.Name == XmlNamespace + "EmbeddedResource")); // #73 include things that are not ending in .resx
             Assert.AreEqual(0, includeItems.Count(x => x.Name == XmlNamespace + "Content"));
             Assert.AreEqual(2, includeItems.Count(x => x.Name == XmlNamespace + "None"));
 
